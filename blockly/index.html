@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&family=Permanent+Marker&family=Righteous&family=Russo+One&display=swap"
+    rel="stylesheet">
+  <title>Blockly</title>
+
+  <script src="package/blockly_compressed.js"></script>
+  <script src="package/blocks_compressed.js"></script>
+  <script src="package/javascript_compressed.js"></script>
+  <script src="blocos_de_movimento.js"></script>
+
+  <script src="package/msg/js/pt-br.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Velozes e Furiosos com Blockly</h1>
+
+  </header>
+  <div id="blocklyDiv"></div>
+  <button id="executar-movimentos">EXECUTAR MOVIMENTOS</button>
+
+
+  <xml id="toolbox" style="display: none">
+    <category name="Movimentos" colour="225">
+      <block type="movimentos"></block>
+
+    </category>
+  </xml>
+  <script>
+    var workspace = Blockly.inject('blocklyDiv',
+      { toolbox: document.getElementById('toolbox') });
+  </script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
