@@ -15,7 +15,7 @@ Como trabalho prático prático da disciplina Web Services, recebemos o desafio 
 <br/>
 
 Página de apresentação do projeto:
-   - [Link](link.com)
+   - [Github Pages](https://carenferreira.github.io/)
 
 Documentação:
 
